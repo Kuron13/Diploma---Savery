@@ -1,0 +1,306 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+  color: black;
+}
+
+.header {
+  display: flex;
+  background: black;
+  margin: 0px 0px 10px 0px;
+}
+
+.navigation-block {
+  padding-top: 0px;
+  margin-top: 0px;
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  background: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-name {
+  margin: 10px 10px 10px 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.buttons-auth {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.btn-auth {
+  background: black;
+  color: white;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid gray;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 200px;
+  position: absolute;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  left: 40vw;
+  top: 20vh;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 800;
+  background: gray;
+  color: black;
+  padding: 2px 2px 2px 2px;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  background: green;
+  color: white;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid gray;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.form-title {
+  font-weight: 600;
+}
+
+.label-form {
+  display: flex;
+  min-width: 150px;
+  min-height: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.input {
+  margin: 5px 5px 5px 5px;
+}
+
+
+.title-text {
+  color: #0F7FFA;
+  font-weight: 700;
+}
+
+.base-text {
+  color: black;
+  font-weight: 400;
+}
+
+.add-text {
+  margin-left: 5px;
+  color: gray;
+  font-weight: 400;
+}
+
+
+
+
+
+.main-block {
+  margin: 0px 30px 0px 0px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-header {
+  display: flex;
+}
+
+.news-tags {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tag {
+  margin: 5px 5px 5px 0px;
+  color: #6DA2DD;
+  font-weight: 700;
+  background-color: transparent;
+  border-width: 0;
+  font-size: 16px;
+}
+
+.tag-selected {
+  margin: 5px 5px 5px 0px;
+  color: #0F7FFA;
+  font-weight: 700;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+}
+
+.news-item-img {
+  widgth: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.news-currency {
+  display: flex;
+}
+
+.currency-item {
+  display: flex;
+  margin: 10px 20px 10px 0px;
+}
+
+.currency-name {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.find {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 70rem;
+  margin: 20px 0px;
+}
+
+.find-types {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.find-type {
+  margin: 5px 5px 5px 0px;
+  color: #0F7FFA;
+}
+
+.find-form {
+  display: flex;
+  height: 30px;
+  position: relative;
+  left: -120px;
+}
+
+.yandex {
+  width: 70px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+.find-input {
+  width: 50rem;
+  height: 30px;
+  border: 1px solid #FFD85D;
+}
+
+.find-btn {
+  width: 5rem;
+  height: 36px;
+  background: #FFD85D;
+}
+
+.find-text-help {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+
+.advertising {
+  display: flex;
+  width: 50rem;
+  height: 100px;
+  justify-content: stretch;
+  border: 1px solid black;
+}
+
+
+
+.other-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 20rem;
+  max-width: 60rem;
+}
+
+.other-item {
+  display: flex;
+  flex-direction: column;
+  width: 19rem;
+  margin: 20px 20px 0px 0px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.other-title {
+  display: flex;
+}
+
+.other-title-add {
+  margin-left: 10px;
+  border: 1px solid #0F7FFA;
+  padding: 2px;
+}
+
+.other-img {
+  max-width: 16rem;
+  max-height: 5rem; 
+}
+
+.other-content-item {
+  display: flex;
+}
