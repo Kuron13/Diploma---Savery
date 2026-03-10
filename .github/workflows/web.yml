@@ -28,10 +28,11 @@ jobs:
         with:
           node-version: 22.14.0
           cache: 'yarn'
-      - run: yarn
-      - run: yarn lint
+          cache-dependency-path: fronted/yarn.lock
+      - run: cd fronted && yarn --frozen-lockfile && yarn
+      - run: cd fronted && yarn --frozen-lockfile && yarn lint
 
-  build:
+  build-and-deploy:
     needs: [eslint]
 
     environment:
@@ -46,14 +47,21 @@ jobs:
         with:
           node-version: 22.14.0
           cache: 'yarn'
-      - run: yarn
-      - run: yarn build
+          cache-dependency-path: fronted/yarn.lock
+      - name: Install dependencies (fronted)
+        run: |
+          cd fronted
+          yarn --frozen-lockfile
+      - name: Build fronted
+        run: |
+          cd fronted
+          yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          path: 'fronted/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
