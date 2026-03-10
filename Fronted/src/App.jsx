@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { Navigation } from './components/Navigation.jsx'
 
-import testImg from './img/empty_card.png'
+//import testImg from './img/empty_card.png'
 
 function App() {
 
