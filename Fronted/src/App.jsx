@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
